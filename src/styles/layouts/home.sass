@@ -1,0 +1,42 @@
+.home
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 100vh
+
+  .container-title
+    width: 55%
+
+  .menu
+    width: 45%
+    position: relative
+
+    img.marker
+      position: absolute
+      left: 0
+      top: 80px
+      width: 120px
+      height: auto
+      transform: rotate(180deg) translateY(50%)
+      transition: 0.4s
+      z-index: -1
+
+    img.marker.hidden
+      opacity: 0
+      left: -20px
+    
+    ul
+      font-family: 'Bungee Regular'
+      font-size: 70px
+      padding: 30px
+
+      li
+        cursor: pointer
+        transition: 0.2s
+        box-sizing: border-box
+        padding-left: 80px
+        padding-top: 30px
+        padding-bottom: 30px
+
+      li:hover
+        margin-left: 20px

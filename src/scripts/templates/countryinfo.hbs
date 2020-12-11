@@ -1,0 +1,22 @@
+<header>
+      <img class="flag js-flag" src="{{flag}}" alt="{{name}}'s flag">
+      <h3 class="js-name">{{name}}</h3>
+</header>
+<div class="content">
+      <div>
+          <p>population : &nbsp;</p>
+          <h4 class="js-population">{{population}}</h4>
+      </div>
+      <div>
+          <p>capital : &nbsp;</p>
+          <h4 class="js-capital">{{capital}}</h4>
+      </div>
+      <div>
+          <p>languages : &nbsp;</p>
+          <h4 class="js-languages">{{#each languages}} {{name}}{{#unless @last}},{{/unless}} {{/each}}</h4>
+      </div>
+      <div>
+          <p>currencies : &nbsp;</p>
+          <h4 class="js-currencies">{{#each currencies}} {{name}} ({{symbol}}){{#unless @last}},{{/unless}} {{/each}}</h4>
+      </div>
+</div>
