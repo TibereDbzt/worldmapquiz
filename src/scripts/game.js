@@ -59,8 +59,6 @@ export default class Game {
         });
       }
     });
-
-    
   }
 
   nextStage () {
